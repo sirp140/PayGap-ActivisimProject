@@ -168,3 +168,90 @@ h3 {
   text-align: justify;
   font-size: 20px;
 }
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+.petition-item {
+  flex: 1;
+}
+
+#signatures {
+  text-align: left;
+  /* adds a little bit of spacing */
+  margin-left: 5vw;
+}
+
+.petition-item:nth-of-type(1){
+  text-align: center;
+  
+}
+.petition-item:nth-of-type(2){
+  
+}
+
+.petition-item:nth-of-type(3){
+  flex-basis: 100%;
+}
+
+#sign-now-button {
+  margin: 20px 0px 100px 0px;
+}
+
+#thanks-modal-content{
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container{
+  display: flex; /* adds flexbox to center the text and buttons */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#closeModalBttn{
+  margin: 20px 0px 100px 0px
+}
+
+.revealable{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2 ease;
+}
+
+.active{
+  transform: translateY(0px);
+  opacity: 1;
+
+}
+/* the modal that covers the background and prevents user interaction */
+.modal{
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place*/
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column;  /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images*/
+.modal-content{
+  background-color: lightblue;
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;  /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
