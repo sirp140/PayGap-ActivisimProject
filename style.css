@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+    /* Add a background color or image */
+    background-color: white;
+    text-align: center;
+    background-image: url("");
+
+    /* Customize the font, size, and color for text */
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    
+    /* Adjust the padding and margins */
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+/* Navbar */
+/* General style rule set for all items in ul */
+.navbar ul {
+    list-style: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-bottom: 150px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+    margin-right: 20px; 
+    width: 130px;
+}
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+    font-family: Arial;
+    color:black;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    justify-content: center;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+    color:#008CBA;
+    margin-right: 10px;
+    font-weight: bold;
+  
+}
+
+/*Customize Dark Mode Theme */
+.dark-mode {
+  background-color: black;
+  color: white;
+  
+}
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3{
+  color: white;
+}
+.dark-mode .navbar a{
+  color: white;
+}
