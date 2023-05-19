@@ -143,3 +143,18 @@ h3 {
   color: black;
   
 }
+
+#hMatterHeader{
+  margin-top: 100px;
+}
+
+#gapMatterPara{
+  margin: 0 80px 30px 80px;
+  text-align: justify;
+  font-size: 20px;
+ }
+
+#graphImg{
+  width: 800px;
+  height: 300px;
+}
